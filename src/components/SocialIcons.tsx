@@ -1,6 +1,8 @@
 ﻿import {
   FaGithub,
+  FaInstagram,
   FaLinkedinIn,
+  FaYoutube,
 } from "react-icons/fa6";
 import "./styles/SocialIcons.css";
 import { TbNotes } from "react-icons/tb";
@@ -25,8 +27,8 @@ const SocialIcons = () => {
         currentX += (mouseX - currentX) * 0.1;
         currentY += (mouseY - currentY) * 0.1;
 
-        link.style.setProperty("--siLeft", ${currentX}px);
-        link.style.setProperty("--siTop", ${currentY}px);
+        link.style.setProperty("--siLeft", `${currentX}px`);
+        link.style.setProperty("--siTop", `${currentY}px`);
 
         requestAnimationFrame(updatePosition);
       };
@@ -58,7 +60,7 @@ const SocialIcons = () => {
     <div className="icons-section">
       <div className="social-icons" data-cursor="icons" id="social">
         <span>
-          
+          <a
             href="https://github.com/VeelsaSelf"
             target="_blank"
             rel="noreferrer"
@@ -67,7 +69,7 @@ const SocialIcons = () => {
           </a>
         </span>
         <span>
-          
+          <a
             href="https://www.linkedin.com/in/satriya-bima-800464338"
             target="_blank"
             rel="noreferrer"
@@ -76,7 +78,7 @@ const SocialIcons = () => {
           </a>
         </span>
       </div>
-      
+      <a
         className="resume-button"
         href="/Akash_Malhotra.pdf"
         target="_blank"
