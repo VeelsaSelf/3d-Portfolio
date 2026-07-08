@@ -75,7 +75,7 @@ const SocialIcons = () => {
       </div>
       <a
         className="resume-button"
-        href="/"
+        href="/junior-ui-ux-designer-junior-frontend-developer.pdf"
         target="_blank"
         rel="noreferrer"
       >
